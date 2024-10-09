@@ -16,16 +16,9 @@ function calculadora(a, b, operacao) {
     }
 }
 
-function calcular() {
-    const a = parseFloat(document.getElementById('numero1').value);
-    const b = parseFloat(document.getElementById('numero2').value);
-    const operacao = document.getElementById('operacao').value;
+function calcular(operacao) {
+    const a = 10; // Número fixo
+    const b = 5;  // Número fixo
     const resultado = calculadora(a, b, operacao);
-    
-    console.log('Número 1:', a);
-    console.log('Número 2:', b);
-    console.log('Operação:', operacao);
     console.log('Resultado:', resultado);
-    
-    document.getElementById('resultado').textContent = 'Resultado: ' + resultado;
 }
